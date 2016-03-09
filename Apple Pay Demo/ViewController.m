@@ -1,12 +1,15 @@
-/**
- 
- **/
+//
+//  ViewController.m
+//  Apple Pay Demo
+//
+//  Created by Victor on 3/7/16.
+//  Copyright © 2016 com.xiaoruigege. All rights reserved.
+//
 
 #import "ViewController.h"
 #import <PassKit/PassKit.h>       //用户绑定银行卡的信息
 #import <PassKit/PKPaymentAuthorizationViewController.h>       //Apple Pay的展示控件
 #import <AddressBook/AddressBook.h>          //用户联系信息相关
-#import <JavaScriptCore/JavaScriptCore.h>
 
 
 @interface ViewController ()<PKPaymentAuthorizationViewControllerDelegate,UIWebViewDelegate>
@@ -207,6 +210,8 @@
  
 
 @end
+
+
 
 
 
