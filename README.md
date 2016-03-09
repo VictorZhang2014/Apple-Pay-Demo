@@ -19,6 +19,7 @@ Steps:
 
 
 
+
 步骤：
 
 1.检测设备和系统是否支持Apple Pay
@@ -35,8 +36,4 @@ Steps:
   代理事件，返回成功支付等信息
 
 
-<<<<<<< HEAD
- ![image](https://github.com/VictorZhang2014/Apple-Pay-Demo.git/applepay.jpg)
-=======
->>>>>>> c8d99fffda9a8d3d51fc0f7307e9f1aeb4156cd0
-
+ ![image](https://github.com/VictorZhang2014/Apple-Pay-Demo/blob/master/applepay.jpg)
