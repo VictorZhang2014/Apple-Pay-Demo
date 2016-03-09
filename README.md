@@ -34,3 +34,6 @@ Steps:
 6.弹出支付控制器面板，选择，并支付
   代理事件，返回成功支付等信息
 
+
+ ![image](https://github.com/VictorZhang2014/Apple-Pay-Demo.git/applepay.jpg)
+
