@@ -35,5 +35,8 @@ Steps:
   代理事件，返回成功支付等信息
 
 
+<<<<<<< HEAD
  ![image](https://github.com/VictorZhang2014/Apple-Pay-Demo.git/applepay.jpg)
+=======
+>>>>>>> c8d99fffda9a8d3d51fc0f7307e9f1aeb4156cd0
 
