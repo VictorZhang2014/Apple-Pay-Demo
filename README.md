@@ -1,4 +1,8 @@
 # Apple-Pay-Demo
+
+　　Apple Pay同时支持线上和线下支付。线下支付用户可使用iPhone 6s、iPhone 6s Plus、iPhone 6、iPhone 6 Plus和 Watch;线上支付用户可使用iPhone 6s、iPhone 6s Plus、iPhone 6、iPhone 6 Plus、iPad Air 2、iPad mini 3、iPad mini 4以及iPad Pro。
+
+
 This is a Apple Pay Demo . If you download it and run it before you must apply yourself Merchant ID.
 
 Steps:

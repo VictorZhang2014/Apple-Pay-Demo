@@ -19,13 +19,12 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-J8-D0d">
                                 <rect key="frame" x="192" y="267" width="216" height="66"/>
-                                <color key="backgroundColor" red="0.00067689877539999996" green="0.71778330180000005" blue="0.052162602879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="6ke-bu-Cs0"/>
                                     <constraint firstAttribute="width" constant="216" id="ebJ-qg-Ba5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Apple Pay 支付">
+                                <state key="normal" backgroundImage="applepay">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -45,4 +44,7 @@
             <point key="canvasLocation" x="375" y="229"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="applepay" width="194" height="64"/>
+    </resources>
 </document>

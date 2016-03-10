@@ -49,9 +49,13 @@
         return NO;
     }
     
+
+    
     //检查用户是否可进行某种卡的支付，是否支持Amex(美国证券交易所)、MasterCard、Visa与银联四种卡，根据自己项目的需要进行检测
     NSArray *supportNetworks = @[PKPaymentNetworkAmex, PKPaymentNetworkMasterCard, PKPaymentNetworkVisa, PKPaymentNetworkChinaUnionPay];
     _supportNetworks = supportNetworks;
+    
+#warning 当真机调试时   如果这里canMakePaymentsUsingNetworks不能通过，表示手机的钱包（wallet）还没有开通，开通后，添加一张卡，就可以使用
     if(![PKPaymentAuthorizationViewController canMakePaymentsUsingNetworks:supportNetworks]){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"没有绑定任何支付的卡片，请绑定卡片！" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OKay", nil];
         [alert show];
@@ -79,7 +83,7 @@
     //    payRequest.requiredBillingAddressFields = PKAddressFieldEmail;
     //如果需要邮寄账单可以选择进行设置，默认PKAddressFieldNone(不邮寄账单)
     //楼主感觉账单邮寄地址可以事先让用户选择是否需要，否则会增加客户的输入麻烦度，体验不好，
-    payRequest.requiredShippingAddressFields = PKAddressFieldPostalAddress|PKAddressFieldPhone|PKAddressFieldName;
+//    payRequest.requiredShippingAddressFields = PKAddressFieldPostalAddress|PKAddressFieldPhone|PKAddressFieldName;
      //送货地址信息，这里设置需要地址和联系方式和姓名，如果需要进行设置，默认PKAddressFieldNone(没有送货地址)
     
     
@@ -87,20 +91,20 @@
     
     //3.设置货物的配送方式，不需要不配置
     //设置两种配送方式
-    PKShippingMethod *freeShipping = [PKShippingMethod summaryItemWithLabel:@"包邮" amount:[NSDecimalNumber zero]];
-    freeShipping.identifier = @"freeshipping";
-    freeShipping.detail = @"6-8 天 送达";
+//    PKShippingMethod *freeShipping = [PKShippingMethod summaryItemWithLabel:@"包邮" amount:[NSDecimalNumber zero]];
+//    freeShipping.identifier = @"freeshipping";
+//    freeShipping.detail = @"6-8 天 送达";
     
     //每条账单的设置
     //账单列表使用PKPaymentSummaryItem添加描述和价格，价格使用NSDecimalNumber。
     //PKPaymentSummaryItem初始化：
     //label为商品名字或者是描述，amount为商品价格，折扣为负数，type为该条账单为最终价格还是估算价格(比如出租车价格预估)
-    PKShippingMethod *expressShipping = [PKShippingMethod summaryItemWithLabel:@"极速送达" amount:[NSDecimalNumber decimalNumberWithString:@"10.00"]];
-    expressShipping.identifier = @"expressshipping";
-    expressShipping.detail = @"2-3 小时 送达";
-    
-    payRequest.shippingMethods = @[freeShipping, expressShipping];
-    
+//    PKShippingMethod *expressShipping = [PKShippingMethod summaryItemWithLabel:@"极速送达" amount:[NSDecimalNumber decimalNumberWithString:@"10.00"]];
+//    expressShipping.identifier = @"expressshipping";
+//    expressShipping.detail = @"2-3 小时 送达";
+//    
+//    payRequest.shippingMethods = @[freeShipping, expressShipping];
+//    
     
     
     
@@ -132,7 +136,8 @@
     totalAmount = [totalAmount decimalNumberByAdding:methodsAmount];
     
     //最后这个是支付给谁。哈哈，快支付给我
-    PKPaymentSummaryItem *total = [PKPaymentSummaryItem summaryItemWithLabel:@"Victor" amount:totalAmount];
+#warning 这里的名称只是显示给用户看，钱是付给谁的
+    PKPaymentSummaryItem *total = [PKPaymentSummaryItem summaryItemWithLabel:@"小睿阁阁工作室" amount:totalAmount];
     
     NSMutableArray *summaryItems = [NSMutableArray arrayWithArray:@[subtotal, discount, methods, total]];
     
@@ -190,11 +195,15 @@
                       didAuthorizePayment:(PKPayment *)payment
                                completion:(void (^)(PKPaymentAuthorizationStatus status))completion {
     
-    PKPaymentToken *payToken = payment.token;
     //支付凭据，发给服务端进行验证支付是否真实有效
-    PKContact *billingContact = payment.billingContact;     //账单信息
-    PKContact *shippingContact = payment.shippingContact;   //送货信息
-    PKContact *shippingMethod = payment.shippingMethod;     //送货方式
+    PKPaymentToken *payToken = payment.token;
+    NSLog(@"%@",payToken);
+    
+    
+    
+//    PKContact *billingContact = payment.billingContact;     //账单信息
+//    PKContact *shippingContact = payment.shippingContact;   //送货信息
+//    PKContact *shippingMethod = payment.shippingMethod;     //送货方式
     
     //等待服务器返回结果后再进行系统block调用
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -203,7 +212,7 @@
     });
 }
 
-/* 支付完成回调 */
+/* 支付完成回调 移除支付界面 */
 - (void)paymentAuthorizationViewControllerDidFinish:(PKPaymentAuthorizationViewController *)controller{
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
