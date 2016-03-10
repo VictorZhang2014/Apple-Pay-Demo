@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		577E38DF1C91997200BF7946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E38DE1C91997200BF7946 /* AppDelegate.swift */; };
+		577E38E11C91997200BF7946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E38E01C91997200BF7946 /* ViewController.swift */; };
+		577E38E41C91997200BF7946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E38E21C91997200BF7946 /* Main.storyboard */; };
+		577E38E61C91997200BF7946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577E38E51C91997200BF7946 /* Assets.xcassets */; };
+		577E38E91C91997200BF7946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E38E71C91997200BF7946 /* LaunchScreen.storyboard */; };
 		57AC64071C8DCBA900E33485 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AC64061C8DCBA900E33485 /* main.m */; };
 		57AC640A1C8DCBA900E33485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AC64091C8DCBA900E33485 /* AppDelegate.m */; };
 		57AC640D1C8DCBA900E33485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AC640C1C8DCBA900E33485 /* ViewController.m */; };
 		57AC64101C8DCBA900E33485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AC640E1C8DCBA900E33485 /* Main.storyboard */; };
 		57AC64121C8DCBA900E33485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AC64111C8DCBA900E33485 /* Assets.xcassets */; };
 		57AC64151C8DCBA900E33485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AC64131C8DCBA900E33485 /* LaunchScreen.storyboard */; };
-		57AC64201C8DCBA900E33485 /* Apple_Pay_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AC641F1C8DCBA900E33485 /* Apple_Pay_DemoTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		577E38DC1C91997200BF7946 /* Apple_Pay_Demo(Swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple_Pay_Demo(Swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		577E38DE1C91997200BF7946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		577E38E01C91997200BF7946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		577E38E31C91997200BF7946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		577E38E51C91997200BF7946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		577E38E81C91997200BF7946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		577E38EA1C91997200BF7946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AC64021C8DCBA900E33485 /* Apple Pay Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Pay Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AC64061C8DCBA900E33485 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57AC64081C8DCBA900E33485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,12 +49,17 @@
 		57AC64141C8DCBA900E33485 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57AC64161C8DCBA900E33485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57AC641B1C8DCBA900E33485 /* Apple Pay DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Pay DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57AC641F1C8DCBA900E33485 /* Apple_Pay_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Apple_Pay_DemoTests.m; sourceTree = "<group>"; };
-		57AC64211C8DCBA900E33485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57F511911C8EFCAC009641DE /* Apple Pay Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Apple Pay Demo.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		577E38D91C91997200BF7946 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57AC63FF1C8DCBA900E33485 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,11 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		577E38DD1C91997200BF7946 /* Apple_Pay_Demo(Swift) */ = {
+			isa = PBXGroup;
+			children = (
+				577E38DE1C91997200BF7946 /* AppDelegate.swift */,
+				577E38E01C91997200BF7946 /* ViewController.swift */,
+				577E38E21C91997200BF7946 /* Main.storyboard */,
+				577E38E51C91997200BF7946 /* Assets.xcassets */,
+				577E38E71C91997200BF7946 /* LaunchScreen.storyboard */,
+				577E38EA1C91997200BF7946 /* Info.plist */,
+			);
+			path = "Apple_Pay_Demo(Swift)";
+			sourceTree = "<group>";
+		};
 		57AC63F91C8DCBA900E33485 = {
 			isa = PBXGroup;
 			children = (
 				57AC64041C8DCBA900E33485 /* Apple Pay Demo */,
-				57AC641E1C8DCBA900E33485 /* Apple Pay DemoTests */,
+				577E38DD1C91997200BF7946 /* Apple_Pay_Demo(Swift) */,
 				57AC64031C8DCBA900E33485 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +104,7 @@
 			children = (
 				57AC64021C8DCBA900E33485 /* Apple Pay Demo.app */,
 				57AC641B1C8DCBA900E33485 /* Apple Pay DemoTests.xctest */,
+				577E38DC1C91997200BF7946 /* Apple_Pay_Demo(Swift).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,18 +134,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		57AC641E1C8DCBA900E33485 /* Apple Pay DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				57AC641F1C8DCBA900E33485 /* Apple_Pay_DemoTests.m */,
-				57AC64211C8DCBA900E33485 /* Info.plist */,
-			);
-			path = "Apple Pay DemoTests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		577E38DB1C91997200BF7946 /* Apple_Pay_Demo(Swift) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577E38ED1C91997200BF7946 /* Build configuration list for PBXNativeTarget "Apple_Pay_Demo(Swift)" */;
+			buildPhases = (
+				577E38D81C91997200BF7946 /* Sources */,
+				577E38D91C91997200BF7946 /* Frameworks */,
+				577E38DA1C91997200BF7946 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Apple_Pay_Demo(Swift)";
+			productName = "Apple_Pay_Demo(Swift)";
+			productReference = 577E38DC1C91997200BF7946 /* Apple_Pay_Demo(Swift).app */;
+			productType = "com.apple.product-type.application";
+		};
 		57AC64011C8DCBA900E33485 /* Apple Pay Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57AC64241C8DCBA900E33485 /* Build configuration list for PBXNativeTarget "Apple Pay Demo" */;
@@ -157,9 +195,13 @@
 		57AC63FA1C8DCBA900E33485 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = com.xiaoruigege;
 				TargetAttributes = {
+					577E38DB1C91997200BF7946 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					57AC64011C8DCBA900E33485 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = B873AZ7BS6;
@@ -190,11 +232,22 @@
 			targets = (
 				57AC64011C8DCBA900E33485 /* Apple Pay Demo */,
 				57AC641A1C8DCBA900E33485 /* Apple Pay DemoTests */,
+				577E38DB1C91997200BF7946 /* Apple_Pay_Demo(Swift) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		577E38DA1C91997200BF7946 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577E38E91C91997200BF7946 /* LaunchScreen.storyboard in Resources */,
+				577E38E61C91997200BF7946 /* Assets.xcassets in Resources */,
+				577E38E41C91997200BF7946 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57AC64001C8DCBA900E33485 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +268,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		577E38D81C91997200BF7946 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577E38E11C91997200BF7946 /* ViewController.swift in Sources */,
+				577E38DF1C91997200BF7946 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		57AC63FE1C8DCBA900E33485 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AC64201C8DCBA900E33485 /* Apple_Pay_DemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +305,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		577E38E21C91997200BF7946 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577E38E31C91997200BF7946 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		577E38E71C91997200BF7946 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				577E38E81C91997200BF7946 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		57AC640E1C8DCBA900E33485 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -263,6 +340,31 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		577E38EB1C91997200BF7946 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Apple_Pay_Demo(Swift)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoruigege.Apple-Pay-Demo-Swift-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		577E38EC1C91997200BF7946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Apple_Pay_Demo(Swift)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xiaoruigege.Apple-Pay-Demo-Swift-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		57AC64221C8DCBA900E33485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +504,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		577E38ED1C91997200BF7946 /* Build configuration list for PBXNativeTarget "Apple_Pay_Demo(Swift)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577E38EB1C91997200BF7946 /* Debug */,
+				577E38EC1C91997200BF7946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		57AC63FD1C8DCBA900E33485 /* Build configuration list for PBXProject "Apple Pay Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

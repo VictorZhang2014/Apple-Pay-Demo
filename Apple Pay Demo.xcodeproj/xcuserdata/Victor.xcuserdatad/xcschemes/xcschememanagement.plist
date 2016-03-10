@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Apple_Pay_Demo(Swift).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>577E38DB1C91997200BF7946</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>57AC64011C8DCBA900E33485</key>
 		<dict>
 			<key>primary</key>

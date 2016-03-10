@@ -83,7 +83,7 @@
     //    payRequest.requiredBillingAddressFields = PKAddressFieldEmail;
     //如果需要邮寄账单可以选择进行设置，默认PKAddressFieldNone(不邮寄账单)
     //楼主感觉账单邮寄地址可以事先让用户选择是否需要，否则会增加客户的输入麻烦度，体验不好，
-//    payRequest.requiredShippingAddressFields = PKAddressFieldPostalAddress|PKAddressFieldPhone|PKAddressFieldName;
+    payRequest.requiredShippingAddressFields = PKAddressFieldPostalAddress|PKAddressFieldPhone|PKAddressFieldName;
      //送货地址信息，这里设置需要地址和联系方式和姓名，如果需要进行设置，默认PKAddressFieldNone(没有送货地址)
     
     
@@ -91,20 +91,20 @@
     
     //3.设置货物的配送方式，不需要不配置
     //设置两种配送方式
-//    PKShippingMethod *freeShipping = [PKShippingMethod summaryItemWithLabel:@"包邮" amount:[NSDecimalNumber zero]];
-//    freeShipping.identifier = @"freeshipping";
-//    freeShipping.detail = @"6-8 天 送达";
+    PKShippingMethod *freeShipping = [PKShippingMethod summaryItemWithLabel:@"包邮" amount:[NSDecimalNumber zero]];
+    freeShipping.identifier = @"freeshipping";
+    freeShipping.detail = @"6-8 天 送达";
     
-    //每条账单的设置
-    //账单列表使用PKPaymentSummaryItem添加描述和价格，价格使用NSDecimalNumber。
-    //PKPaymentSummaryItem初始化：
-    //label为商品名字或者是描述，amount为商品价格，折扣为负数，type为该条账单为最终价格还是估算价格(比如出租车价格预估)
-//    PKShippingMethod *expressShipping = [PKShippingMethod summaryItemWithLabel:@"极速送达" amount:[NSDecimalNumber decimalNumberWithString:@"10.00"]];
-//    expressShipping.identifier = @"expressshipping";
-//    expressShipping.detail = @"2-3 小时 送达";
-//    
-//    payRequest.shippingMethods = @[freeShipping, expressShipping];
-//    
+//    每条账单的设置
+//    账单列表使用PKPaymentSummaryItem添加描述和价格，价格使用NSDecimalNumber。
+//    PKPaymentSummaryItem初始化：
+//    label为商品名字或者是描述，amount为商品价格，折扣为负数，type为该条账单为最终价格还是估算价格(比如出租车价格预估)
+    PKShippingMethod *expressShipping = [PKShippingMethod summaryItemWithLabel:@"极速送达" amount:[NSDecimalNumber decimalNumberWithString:@"10.00"]];
+    expressShipping.identifier = @"expressshipping";
+    expressShipping.detail = @"2-3 小时 送达";
+    
+    payRequest.shippingMethods = @[freeShipping, expressShipping];
+    
     
     
     
