@@ -4,7 +4,16 @@
 //
 //  Created by Victor on 3/7/16.
 //  Copyright © 2016 com.xiaoruigege. All rights reserved.
-//
+/*
+  中国银联Apple Pay支付SDK和文档
+   https://open.unionpay.com/ajweb/product/detail?id=80
+ 
+  中国银联Apple Pay支付的SDK下载
+   https://open.unionpay.com/ajweb/help/file/toDetailPage?id=375&flag=2
+ 
+  Apple Pay适用设备介绍
+   http://www.apple.com/cn/apple-pay/
+ */
 
 #import "ViewController.h"
 #import <PassKit/PassKit.h>       //用户绑定银行卡的信息

@@ -1,5 +1,17 @@
 # Apple-Pay-Demo
 
+This is a link of introduction of Apple Pay/.
+http://www.apple.com/cn/apple-pay/
+
+中国银联Apple Pay支付SDK和文档
+https://open.unionpay.com/ajweb/product/detail?id=80
+
+中国银联Apple Pay支付的SDK下载
+https://open.unionpay.com/ajweb/help/file/toDetailPage?id=375&flag=2
+
+Apple Pay适用设备介绍
+http://www.apple.com/cn/apple-pay/
+
 该项目有Objective-C和Swift版本的
 
 　　Apple Pay同时支持线上和线下支付。线下支付用户可使用iPhone 6s、iPhone 6s Plus、iPhone 6、iPhone 6 Plus和 Watch;线上支付用户可使用iPhone 6s、iPhone 6s Plus、iPhone 6、iPhone 6 Plus、iPad Air 2、iPad mini 3、iPad mini 4以及iPad Pro。
